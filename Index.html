@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalita</title>
+
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://kit.fontawesome.com/b680263a54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="blur-effect c1"></div>
+    <div class="blur-effect c2"></div>
+    <div class="headereff">
+
+    </div>
+    <header class="main">
+        <div class="container innerHeader">
+            <div class="logoArea">
+                <span class="logo">
+                    Lalita
+                </span>
+            </div>
+
+            <button onclick="nav()" class="menuBt">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+
+            <nav id="Navbar" class="Navbar">
+                <a href="#"><span>Home</span></a>
+                <a href="#projects"><span>Projects</span></a>
+                <a href="#about"><span>About</span></a>
+                <a href="#contact"><span>Contact</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="container herosection">
+            <div class="heroText">
+                <p class="ht1">
+                    Hii there, I'm
+                </p>
+                <span class="heroHeading alexbrush">
+                    Lalita
+                </span>
+                <p class="ht2">
+                    BCA Student & Tech Enthusiast
+                </p>
+            </div>
+            <div class="heroimagearea w100" >
+            </div>
+        </section>
+
+        <section id="about" class="container detailsec">
+            <h2>About me</h2>
+            <p>Hello there! I'm Lalita, currently pursuing a Bachelor's in Computer Applications (BCA). Proficient in HTML and CSS, I'm on a continuous learning journey, exploring new skills and technologies. As a fresher, I'm enthusiastic about honing my abilities and adapting to the ever-evolving world of technology. Join me as I embrace new challenges and strive for excellence in my endeavors.</p>
+                <div class="skillarea">
+                    <h3>Skills : </h3>
+                    <span>HTML, CSS, SQL, javascript, c/c++</span>
+                </div>    
+            <button>Contact Now</button>
+        </section>
+
+        <section id="projects" class="container detailsec">
+            <h2>My Projects</h2>
+
+            <div class="projectgallery">
+                <div class="projectCard">
+                    <img width="100%" src="./Images/facebook-project.jpg" alt="">
+                    <p>Facebook clone</p>
+                    <div class="btn-area">
+                        <a href="https://github.com/lalitadogra/facebook_homepage_clone"  target="_blank">
+                            <button class="git-bt">Source Code</button>
+                        </a>
+                        <a href="https://lalita-facebook.netlify.app/"  target="_blank">
+                            <button class="demo-bt">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img width="100%" src="./Images/news-project.jpg" alt="">
+                    <p>News Website</p>
+                    <div class="btn-area">
+                        <a href="https://github.com/lalitadogra/newsapplication" target="_blank">
+                            <button class="git-bt">Source Code</button>
+                        </a>
+                        <a href="https://lalita-news.netlify.app/"  target="_blank">
+                            <button class="demo-bt">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img width="100%" src="./Images/portfolio.png" alt="">
+                    <p>Portfolio</p>
+                    <div class="btn-area">
+                        <a href="https://github.com/lalitadogra/personal_portfolio"  target="_blank">
+                            <button class="git-bt">Portfolio Website</button>
+                        </a>
+                        <a href=""  target="_blank">
+                            <button class="demo-bt">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img width="100%" src="./Images/registration-form-project.jpg" alt="">
+                    <p>Registration Form</p>
+                    <div class="btn-area">
+                        <a href="https://github.com/lalitadogra/basic-registration-form" target="_blank">
+                            <button class="git-bt">Source Code</button>
+                        </a>
+                        <a href="https://lalita-registrationfrom.netlify.app/"  target="_blank">
+                            <button class="demo-bt">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="projectCard">
+                    <img width="100%" src="./Images/parallex project.jpg" alt="">
+                    <p>parallex Website</p>
+                    <div class="btn-area">
+                        <a href="https://github.com/lalitadogra/parallex-website-example"  target="_blank">
+                            <button class="git-bt">Source Code</button>
+                        </a>
+                        <a href="https://lalita-parallex-project.netlify.app/"  target="_blank">
+                            <button class="demo-bt">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </section>
+
+
+        <section id="contact" class="container detailsec">
+            <h2>Contact Now</h2>
+
+            <form action="https://formsubmit.co/lalitadogra1612@gmail.com" method="POST">
+                <input class="w100" name="name" type="text" placeholder="Enter Your Name" required>
+                <input class="w100" name="email" type="email" placeholder="Enter Your Email" required>
+                <textarea class="w100" name="Message" placeholder="Enter Your Message" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <button class="w100 submit" type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <footer class="container">
+            <span>Developed with 💖 by  lalita</span>
+            <a href="https://github.com/lalitadogra/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </footer>
+    </main>
+
+
+
+
+    <script>
+        const navbar = document.getElementById('Navbar');
+        const nav = () => {
+            navbar.classList.toggle("shownav")
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/b680263a54.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
